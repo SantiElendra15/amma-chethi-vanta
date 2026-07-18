@@ -1,0 +1,18 @@
+.cart {
+  text-align: center;
+  color: white;
+  padding: 60px;
+}
+
+.cart h1 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.cart h2 {
+  margin-bottom: 15px;
+}
+
+.cart p {
+  font-size: 20px;
+}

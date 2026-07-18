@@ -1,0 +1,23 @@
+.footer {
+  background: #1f1f23;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  border-top: 2px solid #ff9800;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 17px;
+}
+
+.footer hr {
+  width: 70%;
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid white;
+}

@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  padding: 15px 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+}
+
+nav a:hover {
+  color: #222;
+}
+nav a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav a.active {
+  color: yellow;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
