@@ -43,3 +43,9 @@
 .contact button:hover {
   background: #e68900;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px;
+    padding: 20px;
+  }
+}

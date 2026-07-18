@@ -42,3 +42,14 @@
 .food-card button:hover {
   background: #e67e00;
 }
+@media (max-width: 768px) {
+  .food-card {
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+
+  .food-image {
+    height: 200px;
+  }
+}

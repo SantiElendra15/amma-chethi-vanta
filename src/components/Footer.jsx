@@ -10,9 +10,16 @@ function Footer() {
 
         <p>📍 Akkapally, Yellareddypet</p>
 
-        <p>📞 +91 6301626880</p>
+        <p>
+          📞 <a href="tel:+916301626880">+91 6301626880</a>
+        </p>
 
-        <p>📧 ammachethivanta@gmail.com</p>
+        <p>
+          📧{" "}
+          <a href="mailto:ammachethivanta@gmail.com">
+            ammachethivanta@gmail.com
+          </a>
+        </p>
 
         <hr />
 

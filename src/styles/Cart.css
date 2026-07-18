@@ -16,3 +16,20 @@
 .cart p {
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .cart {
+    padding: 30px 20px;
+  }
+
+  .cart h1 {
+    font-size: 2rem;
+  }
+
+  .cart h2 {
+    font-size: 1.4rem;
+  }
+
+  .cart p {
+    font-size: 16px;
+  }
+}
