@@ -50,6 +50,14 @@ function Navbar() {
             Cart
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/orders"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Orders
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

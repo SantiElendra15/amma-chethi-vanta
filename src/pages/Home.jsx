@@ -1,10 +1,29 @@
+import "../styles/Home.css";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import FoodCard from "../components/FoodCard";
-import foods from "../data/foods";
+import { useEffect, useState } from "react";
+import { getAllFoods } from "../services/FoodService";
 import Footer from "../components/Footer";
 
 function Home() {
+  const [foods, setFoods] = useState([]);
+  const loadFoods = async () => {
+    try {
+      const response = await getAllFoods();
+
+      console.log("API Response:", response);
+      console.log("Data:", response.data);
+      console.log(response.data);
+      setFoods(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    loadFoods();
+  }, []);
+  console.log("Foods State:", foods);
   return (
     <>
       <Navbar />
@@ -14,6 +33,7 @@ function Home() {
         {foods.map((food) => (
           <FoodCard
             key={food.id}
+            id={food.id}
             name={food.name}
             price={food.price}
             image={food.image}

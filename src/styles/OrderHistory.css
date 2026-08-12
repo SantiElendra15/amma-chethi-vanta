@@ -1,0 +1,59 @@
+.order-history {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.order-history h1 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 25px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-table th {
+  background: orange;
+  color: white;
+  padding: 15px;
+}
+
+.order-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table tr:hover {
+  background: #fff7ec;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.cancelled {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .order-history {
+    overflow-x: auto;
+  }
+
+  .order-table {
+    min-width: 700px;
+  }
+}

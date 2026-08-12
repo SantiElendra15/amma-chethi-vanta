@@ -1,5 +1,4 @@
 import "../styles/Hero.css";
-import heroImage from "../assets/images/hero.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -22,7 +21,7 @@ function Hero() {
       </div>
 
       <div>
-        <img src={heroImage} alt="hero" />
+        <img src="/images/hero.png" alt="hero" />
       </div>
     </section>
   );

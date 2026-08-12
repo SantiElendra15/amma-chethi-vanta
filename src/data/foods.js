@@ -1,12 +1,3 @@
-import sarvapindi from "../assets/images/sarvapindi.jpg";
-import makkagarelu from "../assets/images/makka-garelu.jpg";
-import mirchiBajji from "../assets/images/mirci-bajji.jpg";
-import pakodi from "../assets/images/pakodi.jpg";
-import punugulu from "../assets/images/punugulu.jpg";
-import samosa from "../assets/images/samosa.jpg";
-import tea from "../assets/images/tea.jpg";
-import eggBajji from "../assets/images/egg-bajji.jpg";
-
 const foods = [
   {
     id: 1,
