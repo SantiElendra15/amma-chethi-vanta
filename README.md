@@ -22,6 +22,17 @@ https://amma-chethi-vanta-backend.onrender.com
 - Place Order
 - Responsive Design
 
+## Screenshots
+
+# Home Page
+![Home](home.jpeg)
+
+# Menu Page
+![Menu](menu.jpeg)
+
+# Order Page
+![Order](order.jpeg)
+
 ## Backend Repository
 https://github.com/SantiElendra15/amma-chethi-vanta-backend
 
