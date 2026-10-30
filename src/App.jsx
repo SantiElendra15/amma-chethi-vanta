@@ -7,6 +7,7 @@ import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import FoodDetails from "./pages/FoodDetails";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/food/:id" element={<FoodDetails />} />
       <Route path="/orders" element={<OrderHistory />} />
+      <Route path="/admin" element={<Admin />} />
     </Routes>
   );
 }

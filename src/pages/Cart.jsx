@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/Cart.css";
@@ -7,11 +7,13 @@ import { placeOrder } from "../services/OrderService";
 
 function Cart() {
   const location = useLocation();
+  const navigate = useNavigate();
   const food = location.state?.food;
 
   const [customerName, setCustomerName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [quantity, setQuantity] = useState(1);
+  const [success, setSuccess] = useState(false);
 
   const handleOrder = async () => {
     // Food select kakapothe
@@ -47,11 +49,15 @@ function Cart() {
 
       await placeOrder(order);
 
-      alert("Order Placed Successfully ✅");
+      setSuccess(true);
 
       setCustomerName("");
       setPhoneNumber("");
       setQuantity(1);
+
+      setTimeout(() => {
+        navigate("/orders");
+      }, 5000);
     } catch (error) {
       console.log(error);
       alert("Order Failed ❌");
@@ -63,6 +69,14 @@ function Cart() {
       <Navbar />
 
       <div className="cart">
+        {success && (
+          <div className="success-overlay">
+            <div className="success-popup">
+              <h2>✅ Order Placed Successfully!</h2>
+              <p>Redirecting to Order History...</p>
+            </div>
+          </div>
+        )}
         <h1>🛒 Place Your Order</h1>
 
         {food ? (

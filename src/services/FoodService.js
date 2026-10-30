@@ -9,3 +9,15 @@ export const getAllFoods = () => {
 export const getFoodById = (id) => {
   return axios.get(`${BASE_URL}/${id}`);
 };
+
+export const addFood = (food) => {
+  return axios.post(BASE_URL, food);
+};
+
+export const updateFood = (id, food) => {
+  return axios.put(`${BASE_URL}/${id}`, food);
+};
+
+export const deleteFood = (id) => {
+  return axios.delete(`${BASE_URL}/${id}`);
+};
